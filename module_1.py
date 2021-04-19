@@ -1,0 +1,25 @@
+# Assignment 1
+# Pseudocode to rewrite in Python
+# Plus
+
+# class StringCalculator
+# {
+#     int add(string input)
+#     {
+#         if (isEmpty(input))
+#         {
+#             return 0;
+#         }
+#         else
+#         {
+#             numbers = split(intput, ",")
+#             result = 0;
+#
+#             for (number in numbers)
+#             {
+#                 result += getIntFrom(number);
+#             }
+#             return result;
+#         }
+#     }
+# }
