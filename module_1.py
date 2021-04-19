@@ -13,19 +13,19 @@
 #         else
 #         {
 #             numbers = split(intput, ",")
-#             result = 0;
+#             sum = 0;
 #
 #             for (number in numbers)
 #             {
-#                 result += getIntFrom(number);
+#                 sum += getIntFrom(number);
 #             }
-#             return result;
+#             return sum;
 #         }
 #     }
 # }
 
 class StringCalculator(object):
-    def __init__(self, addends):
+    def __init__(self, addends=None):
         self.addends = addends
 
     def addition(self):
@@ -33,14 +33,16 @@ class StringCalculator(object):
             return 0
         else:
             numbers = self.addends.split(',')
-            result = 0
+            sum = 0
             for number in numbers:
-                result += int(number)
-            return result
+                sum += int(number)
+            return sum
 
 
-calculator = StringCalculator('1,2').addition()
+calculator = StringCalculator().addition()
+calculator2 = StringCalculator('3,2').addition()
 
 print(calculator)
+print(calculator2)
 
 
