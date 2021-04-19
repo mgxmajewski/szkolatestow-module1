@@ -23,3 +23,24 @@
 #         }
 #     }
 # }
+
+class StringCalculator(object):
+    def __init__(self, addends):
+        self.addends = addends
+
+    def addition(self):
+        if self.addends is None:
+            return 0
+        else:
+            numbers = self.addends.split(',')
+            result = 0
+            for number in numbers:
+                result += int(number)
+            return result
+
+
+calculator = StringCalculator('1,2').addition()
+
+print(calculator)
+
+
